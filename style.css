@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+.main-card {
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: darkblue 0 0 20px 5px;
+}
+
+.timer-card {
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.large-font {
+    font-size: 50px;
+    color: whitesmoke;
+    text-decoration: darkblue underline;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: teal;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.button:hover {
+    border-color: white;
+}
+
+.button.correct {
+    background-color: green;
+}
+
+.button.wrong {
+    background-color: red;
+}
+
+.start-button, .next-button {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.button-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
